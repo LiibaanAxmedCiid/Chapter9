@@ -1,0 +1,43 @@
+.MAIN{
+    border: 0.2px solid black;
+    box-shadow: 0 0 15px rgb(249, 0, 0);
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+
+}
+.H{
+    background-color: rgb(1, 1, 94);
+    color: white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+   
+
+}
+.H:hover{
+    color: orange;
+    background-color: white;
+    transition: 0.5s;
+   
+    
+}
+.col-span{
+    background-color: rgb(160, 207, 191);
+    font-weight: bold;
+    text-align: center;
+}
+td{
+    border: 0.1px solid black;
+    font-size: 10px;
+    padding-left: 2px;
+   
+   
+    
+}
+
+tr:hover{
+background-color: rgb(225, 225, 223);
+transition: 0.5s;
+}
