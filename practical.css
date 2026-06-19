@@ -47,7 +47,10 @@ td{
    
     
 }
-
+td:nth-of-type(2){
+    text-align:center;
+    color:brown;
+}
 tr:hover{
 background-color: rgb(225, 225, 223);
 transition: 0.5s;
