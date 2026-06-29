@@ -1,180 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="practical.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CM251 Timetable</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Times New Roman", serif;
+    background:#f2f2f2;
+    padding:30px;
+}
+
+.container{
+    width:95%;
+    max-width:1100px;
+    margin:auto;
+    background:#fff;
+    padding:20px;
+    box-shadow:0 0 15px rgba(0, 0, 0, 1);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+    font-size:32px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    border:1px solid #000;
+    padding:8px 10px;
+    font-size:17px;
+}
+
+th{
+    background:#1e006a;
+    text-align:center;
+    color: white;
+    font-size: 20px;
+    padding: 20px 0;
+}
+.total{
+     background:#1e006a;
+    text-align:center;
+    color: white;
+    font-size: 20px;
+    padding: 20px 0;
+}
+th:hover{
+    background-color: white;
+    color: #ffbb00;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+.day td{
+    background:#d9edf7;
+    font-weight:bold;
+    text-align:center;
+    font-size:19px;
+}
+
+td:nth-child(2){
+    text-align:center;
+}
+
+tfoot td{
+    text-align:center;
+    font-weight:bold;
+    font-size:18px;
+}
+
+@media(max-width:768px){
+
+.container{
+    width:100%;
+    padding:10px;
+}
+
+th,td{
+    font-size:14px;
+    padding:6px;
+}
+
+h1{
+    font-size:24px;
+}
+
+}
+</style>
+
 </head>
 
 <body>
 
-  <table class="MAIN">
-    <caption>CA259 TimeTable</caption>
-    <tr>
-      <th class="H">Subject</th>
-      <th class="H">Time</th>
-      <th class="H">Lecturer</th>
-    </tr>
-    <tr>
-      <td colspan="3" class="col-span">
-        Thursday
-      </td>
-    </tr>
-    <tr>
-      <td>
-        English Level II
-      </td>
-      <td>7:30 AM - 8:30 AM</td>
-      <td>
-        Masisa Moses
-      </td>
-    </tr>
-    <tr>
-      <td>
-        English Level II
-      </td>
-      <td>8:30 AM - 9:30 AM</td>
-      <td>
-        Masisa Moses
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Islamic
-      </td>
-      <td>9:30 AM - 10:30 AM</td>
-      <td>
-        Abdullahi Moallim
-        Abdirahman
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Somali study
-      </td>
-      <td>10:30 AM - 11:30 AM</td>
-      <td>
-        Hassan Mohamud Fiidow
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Object Oriented Programming
-        using Python
-      </td>
-      <td>11:30 AM - 12:30 AM</td>
-      <td>
-        Abukar Hassan Salah
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Object Oriented Programming
-        using Python
-      </td>
-      <td>1:00 PM - 2:00 PM</td>
-      <td>
-        Abukar Hassan Salah
-      </td>
-    </tr>
+<div class="container">
 
-    <tr>
-      <td>
-        Object Oriented Programming
-        using Python
-      </td>
-      <td>2:00 PM - 3:00 PM</td>
-      <td>
-        Abukar Hassan Salah
-      </td>
-    </tr>
-    <tr>
-      <td>
-        Object Oriented Programming
-        using Python
-      </td>
-      <td>3:00 PM - 4:00 PM</td>
-      <td>
-        Abukar Hassan Salah
-      </td>
-    </tr>
-    <tr>
-      <td colspan="3" class="col-span">
-        Friday
-      </td>
-    </tr>
-    <tr>
-      <td>Mathematical Foundations for
-        Engineering </td>
-      <td>
-        07:00 AM - 08:00 AM
-      </td>
-      <td>
-        Ahmed Mohamud Hussein
-      </td>
-    </tr>
-    <tr>
-      <td>Mathematical Foundations for
-        Engineering </td>
-      <td>
-        08:00 AM - 09:00 AM
-      </td>
-      <td>
-        Ahmed Mohamud Hussein
-      </td>
-    </tr>
-    <tr>
-      <td>Basics of Web Designing</td>
-      <td>
-        09:00 AM - 10:00 AM
-      </td>
-      <td>
-        Liban Ahmed Eid
-      </td>
-    </tr>
-    <tr>
-      <td>Basics of Web Designing</td>
-      <td>
-        10:00 AM - 11:00 AM
-      </td>
-      <td>
-        Liban Ahmed Eid
-      </td>
-    </tr>
-    <tr>
-      <td>Basics of Web Designing</td>
-      <td>
-        11:00 AM - 12:15 PM
-      </td>
-      <td>
-        Liban Ahmed Eid
-      </td>
-    </tr>
-     <tr>
-      <td>
-        English Level II
-      </td>
-      <td>1:00 PM - 2:00 PM</td>
-      <td>
-        Masisa Moses
-      </td>
-    </tr>
-    <tr>
-      <td>
-        English Level II
-      </td>
-      <td>2:00 PM - 3:00 PM</td>
-      <td>
-        Masisa Moses
-      </td>
-    </tr>
-  </table>
+<h1>Period of CM251 - Semester 2</h1>
+
+<table>
+
+<thead>
+<tr>
+<th>Subject</th>
+<th>Time</th>
+<th>Lecturer</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr class="day">
+<td colspan="3">Saturday</td>
+</tr>
+
+<tr>
+<td>Somali Study</td>
+<td>07:45 AM - 08:45 AM</td>
+<td>Hassan Mohamud Fiidow</td>
+</tr>
+
+<tr>
+<td>Somali Study</td>
+<td>08:45 AM - 09:45 AM</td>
+<td>Hassan Mohamud Fiidow</td>
+</tr>
+
+<tr>
+<td>English Level II</td>
+<td>10:15 AM - 11:15 AM</td>
+<td>Haret Mahad Diriye</td>
+</tr>
+
+<tr>
+<td>English Level II</td>
+<td>11:15 AM - 12:15 PM</td>
+<td>Haret Mahad Diriye</td>
+</tr>
+
+<tr class="day">
+<td colspan="3">Sunday</td>
+</tr>
+
+<tr>
+<td>Mathematical Foundations for Engineering</td>
+<td>07:00 AM - 07:45 AM</td>
+<td>Ahmed Ali Hirey</td>
+</tr>
+
+<tr>
+<td>Basics of Web Designing</td>
+<td>07:45 AM - 08:45 AM</td>
+<td>Liban Ahmed Abdullahi</td>
+</tr>
+
+<tr>
+<td>Basics of Web Designing</td>
+<td>08:45 AM - 09:45 AM</td>
+<td>Liban Ahmed Abdullahi</td>
+</tr>
+
+<tr>
+<td>English Level II</td>
+<td>10:15 AM - 11:15 AM</td>
+<td>Haret Mahad Diriye</td>
+</tr>
+
+<tr>
+<td>English Level II</td>
+<td>11:15 AM - 12:15 PM</td>
+<td>Haret Mahad Diriye</td>
+</tr>
+
+<tr class="day">
+<td colspan="3">Monday</td>
+</tr>
+
+<tr>
+<td>English Level II</td>
+<td>07:45 AM - 08:45 AM</td>
+<td>Haret Mahad Diriye</td>
+</tr>
+
+<tr>
+<td>English Level II</td>
+<td>08:45 AM - 09:45 AM</td>
+<td>Haret Mahad Diriye</td>
+</tr>
+
+<tr>
+<td>Mathematical Foundations for Engineering</td>
+<td>10:15 AM - 11:15 AM</td>
+<td>Ahmed Ali Hirey</td>
+</tr>
+
+<tr>
+<td>Mathematical Foundations for Engineering</td>
+<td>11:15 AM - 12:15 PM</td>
+<td>Ahmed Ali Hirey</td>
+</tr>
+
+<tr class="day">
+<td colspan="3">Tuesday</td>
+</tr>
+
+<tr>
+<td>Object Oriented Programming using Python</td>
+<td>07:45 AM - 08:45 AM</td>
+<td>Abdullahi Mohamed Hassan</td>
+</tr>
+
+<tr>
+<td>Object Oriented Programming using Python</td>
+<td>08:45 AM - 09:45 AM</td>
+<td>Abdullahi Mohamed Hassan</td>
+</tr>
+
+<tr>
+<td>Islamic Studies</td>
+<td>10:15 AM - 11:15 AM</td>
+<td>Sh Hussein Hassan</td>
+</tr>
+
+<tr>
+<td>Islamic Studies</td>
+<td>11:15 AM - 12:15 PM</td>
+<td>Sh Hussein Hassan</td>
+</tr>
+<tr>
+    <td>Basics of Web Designing</td>
+    <td>01:00 PM - 02:00 PM</td>
+    <td>Liban Ahmed Abdullahi</td>
+</tr>
+
+<tr>
+    <td>Basics of Web Designing</td>
+    <td>02:00 PM - 03:00 PM</td>
+    <td>Liban Ahmed Abdullahi</td>
+</tr>
+
+<tr class="day">
+    <td colspan="3">Wednesday</td>
+</tr>
+
+<tr>
+    <td>English Level II</td>
+    <td>07:00 AM - 07:45 AM</td>
+    <td>Haret Mahad Diriye</td>
+</tr>
+
+<tr>
+    <td>English Level II</td>
+    <td>07:45 AM - 08:45 AM</td>
+    <td>Haret Mahad Diriye</td>
+</tr>
+
+<tr>
+    <td>Object Oriented Programming using Python</td>
+    <td>08:45 AM - 09:45 AM</td>
+    <td>Abdullahi Mohamed Hassan</td>
+</tr>
+
+<tr>
+    <td>Object Oriented Programming using Python</td>
+    <td>10:15 AM - 11:15 AM</td>
+    <td>Abdullahi Mohamed Hassan</td>
+</tr>
+
+<tr>
+    <td>Object Oriented Programming using Python</td>
+    <td>11:15 AM - 12:15 PM</td>
+    <td>Abdullahi Mohamed Hassan</td>
+</tr>
+
+</tbody>
+
+<tfoot>
+<tr>
+    <td colspan="3" class="total">Total Periods: 24</td>
+</tr>
+</tfoot>
+
+</table>
+
+</div>
 
 </body>
-
-</html>
-</body>
-
 </html>
